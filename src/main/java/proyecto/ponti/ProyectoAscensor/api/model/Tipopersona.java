@@ -11,5 +11,14 @@ public class Tipopersona {
     @Column(name = "idtipopersona")
     private Integer id;
 
-    private String rol;
+    @Enumerated(EnumType.STRING)
+
+    private Rol rol;
+
+    public enum Rol{
+        ALUMNO,
+
+        DOCENTE
+    }
+
 }

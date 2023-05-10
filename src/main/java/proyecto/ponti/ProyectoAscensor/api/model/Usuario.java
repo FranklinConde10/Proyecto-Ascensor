@@ -15,9 +15,8 @@ public class Usuario {
     private  String user;
     private String password;
 
-    public enum Rol{
-        ALUMNO,
+    @ManyToOne
+    @JoinColumn (name = "id_tipopersona")
+    private Tipopersona tipopersona;
 
-        DOCENTE
     }
-}
