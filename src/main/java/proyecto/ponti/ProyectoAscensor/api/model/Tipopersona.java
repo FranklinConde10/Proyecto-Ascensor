@@ -8,8 +8,17 @@ import lombok.Data;
 public class Tipopersona {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "idtipopersona")
+    @Column(name = "id_tipopersona")
     private Integer id;
 
-    private String rol;
+    @Enumerated(EnumType.STRING)
+
+    private Rol rol;
+
+    public enum Rol{
+        ALUMNO,
+
+        DOCENTE
+    }
+
 }

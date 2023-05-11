@@ -9,7 +9,7 @@ public class Tramite {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "idtramite")
+    @Column(name = "id_tramite")
 
     private Integer id;
 
@@ -28,7 +28,7 @@ public class Tramite {
     private String foto;
 
     @ManyToOne
-    @JoinColumn (name = "idalumno")
+    @JoinColumn (name = "id_alumno")
     private Alumno idalumno;
 
 }
