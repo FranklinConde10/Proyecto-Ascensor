@@ -19,7 +19,7 @@ private String voucher;
 
 
 @ManyToOne
-    @JoinColumn(name = "idtramitelumno")
+    @JoinColumn(name = "idtramites")
     private Tramites idTramites;
 
     @OneToOne

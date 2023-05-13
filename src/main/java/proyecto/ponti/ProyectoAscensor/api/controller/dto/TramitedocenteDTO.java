@@ -5,7 +5,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class TramiteDTO {
+public class TramitedocenteDTO {
 
     @NotBlank
     @Size(min=1, max = 30)

@@ -1,22 +1,36 @@
 package proyecto.ponti.ProyectoAscensor.api.model;
 
-
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
+
 public class Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idusuario")
-    private Integer idusuario;
-    //@Enumerated(EnumType.STRING)
-    private  String user;
-    private String password;
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name ="idusuario")
+    private Integer idsuario;
+ private String nombre;
 
-    @ManyToOne
-    @JoinColumn (name = "id_tipopersona")
-    private Tipopersona tipopersona;
+ private String apellido;
 
-    }
+ private String dni;
+ private  String telefono;
+
+ private String correo;
+
+ //@Enumerated (EnumType.STRING)
+    private
+    Rol rol;
+
+ private String user;
+
+ private String pass;
+ public enum Rol{
+Alumno,
+DOCENTE
+
+ }
+
+}
