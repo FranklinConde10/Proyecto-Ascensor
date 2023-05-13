@@ -11,12 +11,26 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idusuario")
     private Integer idusuario;
-    @Enumerated(EnumType.STRING)
-    private  String user;
-    private String password;
 
-    @ManyToOne
-    @JoinColumn (name = "id_tipopersona")
-    private Tipopersona tipopersona;
+    private String nombre;
 
-    }
+    private String apellido;
+
+    private String dni;
+
+    private String telefono;
+
+    private  String correo;
+
+    //@Enumerated(EnumType.STRING)
+    private Rol rol;
+    private String user;
+
+    private String pass;
+    public enum Rol{
+
+        ALUMNO,
+
+        DOCENTE
+
+    }}
