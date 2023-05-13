@@ -14,7 +14,7 @@ import proyecto.ponti.ProyectoAscensor.api.model.Tramite;
 import proyecto.ponti.ProyectoAscensor.api.repository.TramiteRepository;
 
 @RestController
-@RequestMapping("/api/aea/tramite")
+@RequestMapping("api/aea/tramite")
 public class TramiteController {
 
     private final TramiteRepository tramiteRepository;
@@ -24,7 +24,7 @@ public class TramiteController {
     }
 
     @GetMapping("")
-    Page<Tramite> index(@PageableDefault(sort = "numtramite", size = 5) Pageable pageable) {
+    Page<Tramite> index(@PageableDefault(sort = "id", size = 5) Pageable pageable) {
         return tramiteRepository.findAll(pageable);
     }
 

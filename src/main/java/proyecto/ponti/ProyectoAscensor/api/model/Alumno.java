@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
+@Table (name="alumno")
 public class Alumno {
 
     @Id
@@ -19,8 +20,8 @@ public class Alumno {
     private String voucher;
 
     @ManyToOne
-    @JoinColumn(name="id_tipopersona")
-    private Tipopersona idtipopersona;
+    @JoinColumn(name="tipopersona_id_tipopersona")
+    private Tipopersona tipopersona_id_tipopersona;
 
 
 

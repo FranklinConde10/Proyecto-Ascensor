@@ -10,6 +10,9 @@ public interface TramiteRepository extends JpaRepository<Tramite, Integer> {
 
 
     @Override
-    Optional<Tramite> findById(Integer integer);
-    Optional<Tramite> findOneByIdAndNumtramite(Integer id, String numTramite);
+    Optional<Tramite> findById(Integer id);
+
+    Optional<Tramite> findByNombreAndApellido(String nombre, String apellido);
+
+    Optional<Tramite> findByCodigo(String codigo);
 }
