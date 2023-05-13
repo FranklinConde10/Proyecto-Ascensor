@@ -6,9 +6,10 @@ import org.modelmapper.internal.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 @Data
 @Entity
+@Table(name = "tramites")
 public class Tramites {
 @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "idtramites")
 private Integer id;
 

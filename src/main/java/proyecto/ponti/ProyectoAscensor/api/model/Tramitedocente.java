@@ -5,10 +5,11 @@ import lombok.Data;
 
 @Entity
 @Data
+@Table(name = "tramitedocente")
 public class Tramitedocente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 @Column(name="idtramitedocente")
 private Integer id;
 
@@ -20,6 +21,9 @@ private Integer id;
     private String correoinstitucional;
     private String foto;
 
+    @ManyToOne
+    @JoinColumn(name = "idusuario")
+    private Usuario idusuario;
 
     @ManyToOne
     @JoinColumn(name ="idtramitealumno")
@@ -29,9 +33,6 @@ private Integer id;
     @JoinColumn(name = "idtramites")
     private Tramites idTramites;
 
-    @ManyToOne
-    @JoinColumn(name = "idusuario")
-    private Usuario idusuario;
 
 
 

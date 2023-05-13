@@ -1,15 +1,27 @@
-//package proyecto.ponti.ProyectoAscensor.api.controller.dto;
+package proyecto.ponti.ProyectoAscensor.api.controller.dto;
 
-//import lombok.Getter;
-//import lombok.Setter;
+import com.mysql.cj.util.StringUtils;
+import lombok.Getter;
+import lombok.Setter;
+import proyecto.ponti.ProyectoAscensor.api.model.Tramitedocente;
+import proyecto.ponti.ProyectoAscensor.api.model.Tramites;
+import proyecto.ponti.ProyectoAscensor.api.model.Usuario;
 
-//@Getter
-//@Setter
-//public class TramitealumnoDTO {
-// private String carrera;
+@Getter
+@Setter
+public class TramitealumnoDTO {
 
-// private String ciclo;
+ private Integer id;
 
-//private String vouchert;
 
-//}
+ private String carrera;
+
+ private String ciclo;
+
+private String voucher;
+
+private Usuario idusuario;
+
+private Tramites idtramites;
+
+}
