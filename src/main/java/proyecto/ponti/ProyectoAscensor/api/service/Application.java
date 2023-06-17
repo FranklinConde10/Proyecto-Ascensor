@@ -1,4 +1,4 @@
-package proyecto.ponti.ProyectoAscensor.api.service;
+package proyecto.ponti.ProyectoAscensor.api;
 
 
 

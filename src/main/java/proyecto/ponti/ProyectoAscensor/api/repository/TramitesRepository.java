@@ -6,10 +6,15 @@ import proyecto.ponti.ProyectoAscensor.api.model.Tramites;
 import java.util.Optional;
 
 public interface TramitesRepository extends JpaRepository<Tramites, Integer> {
-    //optener tramites por ID
 
+    @Override
+    Optional<Tramites> findById(Integer id);
 
-    Optional<Tramites> findOneById(Integer id);
-
-    Optional<Tramites> findOneByIdAndNumtramite(Integer id, String numtramite);
+    Optional<Tramites> findOneByNombre(String nombre);
+    Optional<Tramites> findOneByApellido(String apellido);
+    Optional<Tramites> findOneByCodigo(String codigo);
+    Optional<Tramites> findOneByTelefono(Integer telefono);
+    Optional<Tramites> findOneByOcupacion(String ocupacion);
+    Optional<Tramites> findOneByCorint(String corint);
+    Optional<Tramites> findOneByTipint(String tipint);
 }

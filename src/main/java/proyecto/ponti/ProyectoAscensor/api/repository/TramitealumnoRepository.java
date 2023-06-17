@@ -1,5 +1,6 @@
 package proyecto.ponti.ProyectoAscensor.api.repository;
 
+import org.aspectj.apache.bcel.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import proyecto.ponti.ProyectoAscensor.api.model.Tramitealumno;
 
