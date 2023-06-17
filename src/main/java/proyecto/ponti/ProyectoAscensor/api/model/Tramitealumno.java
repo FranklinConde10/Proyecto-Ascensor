@@ -11,7 +11,7 @@ public class Tramitealumno {
     @Column(name = "idtramitealumno")
     private Integer id;
     private String carrera;
-
+    private Integer id;
     private String ciclo;
 
     private String voucher;
