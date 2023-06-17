@@ -1,3 +1,3 @@
-# Proyecto-Ascensor
-Un sistema que registra todas las solicitudes de los estudiantes de la ELP para obtener una tarjeta de ascensor
-![BaseDatosTramite](https://github.com/FranklinConde10/Proyecto-Ascensor/assets/130867016/2c476532-9566-4d6d-ac77-79f310eac742)
+# Base Datos - Tramite Pontificia
+
+![BD-Tramites_Pontificia](https://github.com/FranklinConde10/Proyecto-Ascensor/assets/130867016/ed00e68d-bc1f-4353-9aba-c27d6e8400a1)
